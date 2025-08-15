@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>فیس بک مارکیٹنگ</title>
+  <meta name="description" content="فیس بک مارکیٹنگ — صرف موبائل اور انٹرنیٹ کی ضرورت، لیپ ٹاپ بہتر۔ اس سے آپ مہینے کا 20,000 کما سکتے ہیں۔">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#0b1020; --bg2:#0f1830; --text:#ecf1ff; --muted:#a7b0c0;
+      --glass:rgba(255,255,255,.06); --border:rgba(255,255,255,.12);
+      --accent:#22d3ee; --accent2:#a78bfa; --radius:18px;
+      --shadow:0 14px 40px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:'Noto Nastaliq Urdu',serif; color:var(--text); line-height:1.8;
+      background:
+        radial-gradient(800px 500px at 90% -10%, rgba(167,139,250,.18), transparent 60%),
+        radial-gradient(700px 450px at -10% 20%, rgba(34,211,238,.16), transparent 60%),
+        linear-gradient(180deg,var(--bg1),var(--bg2));
+      display:grid; place-items:center; padding:18px;
+    }
+    .wrap{width:100%; max-width:720px}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow);
+      padding:22px;
+    }
+    h1{margin:0 0 8px; font-size:34px; font-weight:700; text-align:center}
+    p{margin:10px 0}
+    .muted{color:var(--muted)}
+    .bullets{margin:14px 0; padding:0; list-style:none}
+    .bullets li{margin:8px 0; padding:10px 12px; border:1px solid var(--border); border-radius:12px; background:rgba(255,255,255,.04)}
+    .cta{
+      display:block; text-align:center; margin-top:16px; padding:14px 16px; font-weight:800; text-decoration:none;
+      color:#06141b; background:linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius:14px; border:1px solid rgba(255,255,255,.25); box-shadow:0 10px 28px rgba(0,0,0,.35);
+    }
+    .cta:active{transform:translateY(1px)}
+    .note{font-size:13px; text-align:center; margin-top:10px; color:var(--muted)}
+    footer{margin-top:14px; text-align:center; color:var(--muted); font-size:13px}
+    @media (max-width:420px){
+      h1{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="card">
+      <h1>فیس بک مارکیٹنگ</h1>
+
+      <ul class="bullets">
+        <li>صرف <strong>موبائل</strong> اور <strong>انٹرنیٹ</strong> کی ضرورت — <em>لیپ ٹاپ بہت زیادہ بہتر</em>۔</li>
+        <li>اس سے آپ <strong>مہینے کا 20,000</strong> تک کما سکتے ہیں (محنت اور اسٹریٹیجی پر منحصر)۔</li>
+      </ul>
+
+      <p class="muted">
+        فیس بک مارکیٹنگ میں پیج مینجمنٹ، ہدفی (Targeted) اشتہارات، اور سادہ کنٹینٹ پلاننگ کے ذریعے آپ
+        اپنے بزنس کی پہچان بڑھاتے ہیں۔ صحیح آڈینس، مناسب بجٹ اور مسلسل آپٹیمائزیشن سے بہتر
+        رزلٹس آتے ہیں — جیسے زیادہ اِن باؤنڈ میسجز اور سیلز۔
+      </p>
+
+      <!-- گروپ جوائن بٹن (اپنا گروپ لنک نیچے JS میں دیں) -->
+      <a id="joinBtn" class="cta" href="#" target="_blank" rel="noopener">واٹس ایپ گروپ میں شامل ہوں</a>
+      <div class="note">بٹن دبائیں اور سیدھا گروپ میں شامل ہو جائیں۔</div>
+    </div>
+    <footer>© <span id="year"></span> فیس بک مارکیٹنگ</footer>
+  </main>
+
+  <script>
+    // ←←← صرف یہ لائن بدلیں: اپنے WhatsApp گروپ کا Invite لنک یہاں دیں
+    // مثال: const GROUP_LINK = 'https://chat.whatsapp.com/XXXXXXXXXXXXXXX';
+    const GROUP_LINK = 'https://chat.whatsapp.com/GR9rE7fXJZID8rEbqKZR2c?mode=ac_t';
+
+    // نیچے کچھ بھی نہ چھیڑیں
+    document.getElementById('joinBtn').href = GROUP_LINK;
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
